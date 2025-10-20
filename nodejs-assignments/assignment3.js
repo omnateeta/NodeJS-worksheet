@@ -2,7 +2,7 @@
 const fs = require('fs');
 
 // Function to read all contacts from JSON file
-function readContacts() {
+function readContacts() {   
   const data = fs.readFileSync('contacts.json', 'utf8');
   return JSON.parse(data); // Convert JSON string to JS array
 }
@@ -79,3 +79,4 @@ deleteContactById(2);
 // 6️.Verify deletion
 contacts = readContacts();
 displayContacts(contacts);
+
