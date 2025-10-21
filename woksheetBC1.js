@@ -1,4 +1,4 @@
- const fs = require("fs")
+ const fs = require("fs") 
 
  
 //  console.log("Hello World 1");
@@ -34,4 +34,5 @@ fs.appendFile("./abc.txt", "\nThis is appended data", {encoding:"utf-8"}, (err)=
     if(!err){
         console.log("Data added");
     }
+
 })
